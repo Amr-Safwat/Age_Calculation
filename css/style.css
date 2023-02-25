@@ -4,6 +4,7 @@
 
 body {
 	background-color: deepskyblue;
+	font-family: cairo, Helvetica, sans-serif;
 }
 
 .card {
@@ -66,5 +67,7 @@ body {
 
 .card p {
 	margin: 10px 0;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
 }
