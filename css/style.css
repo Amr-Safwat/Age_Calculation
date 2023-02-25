@@ -23,7 +23,7 @@ body {
 
 .card img {
 	display: block;
-	margin: 40px auto;
+	margin: 20px auto;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -42,6 +42,7 @@ body {
 	text-align: center;
   border: none;
   border-radius: 4px;
+	outline: none;
 }
 
 .card input:focus input::placeholder {
@@ -53,6 +54,9 @@ body {
 	display: block;
 	font-size: 16px;
 	font-weight: 600;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 15px;
 }
 
 .card div {
