@@ -1,6 +1,10 @@
 let input = document.getElementById('date');
 let age = document.querySelector('.age');
 let day = document.querySelector('.day');
+let days = document.querySelector('.days');
+let hours = document.querySelector('.hour');
+let minutes = document.querySelector('.minute');
+
 let btn = document.getElementById('btn');
 
 let result;
