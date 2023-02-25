@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: darkslategray;
+}
+
+.card {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-80%);
+	padding: 30px;
+}
+
+@media (max-width: 767px) {
+	.card {
+		width: 100%;
+	}
+	.card input {
+		width: 100%;
+	}
+}
+
+.card h1 {
+	text-align: center;
+}
+
+.card input {
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.card input:focus input::placeholder {
+	opacity: 0;
+	color: red;
+}
+.card button {
+	margin: 20px auto;
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.card div {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.card p {
+	margin: 10px 0;
+	font-size: 18px;
+}
