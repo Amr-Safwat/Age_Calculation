@@ -37,18 +37,24 @@ body {
 	text-align: center;
 }
 
+.card div:first-of-type {
+	display: flex;
+	align-items: center;
+}
+
 .card input {
-	display: block;
 	margin: 10px auto;
 	padding: 8px;
 	text-align: center;
-  border: none;
-  border-radius: 4px;
+	border: none;
+	border-radius: 4px;
 	outline: none;
 	font-size: 16px;
+	font-weight: 600;
 	background-color: #eee;
 	font-family: 'Cairo', sans-serif;
 	border: 1px solid #ccc;
+	width: 90px;
 }
 
 .card input:focus input::placeholder {
@@ -72,8 +78,7 @@ body {
 	border: none;
 }
 
-.card div {
-	/* border: 1px solid #ccc; */
+.card div:last-child {
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.3);
 }
