@@ -20,6 +20,12 @@ btn.onclick = () => {
 	days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)}`;
 	hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)}`;
 	minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)}`;
+
+  modal.style.display = 'block';
+
+  inputs[0].value = '';
+  inputs[1].value = '';
+  inputs[2].value = '';
 };
 
 function showTheDay(dayNum) {
@@ -39,4 +45,13 @@ function showTheDay(dayNum) {
     case 6:
       return 'السبت';
   }
+}
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

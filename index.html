@@ -19,7 +19,17 @@
 				<input type="text" id="date" placeholder="شهر" />/
 				<input type="text" id="date" placeholder="يوم" />
 			</div>
-			<button id="btn">احسب</button>
+			<button id="btn" style="width:auto;">احسب</button>
+
+		</div>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container">
+		</div>
 			<div>
 				<p class="age"></p>
 				<p class="day"></p>
@@ -27,7 +37,13 @@
 				<p class="hour"></p>
 				<p class="minute"></p>
 			</div>
-		</div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+		<span>powered py Amr Safwat</span>
 		<script src="main.js"></script>
 	</body>
 </html>
