@@ -14,18 +14,17 @@ btn.onclick = ()=>{
   let birthday = new Date(input.value);
   result = dateNow - birthday;
   let fullYears = parseInt(result / 1000 / 60 / 60 / 24 / 365);
-  console.log(fullYears);
   age.innerHTML = `عمرك ${fullYears} سنة`;
   day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
-}
-
-function msg() {
-  h2.innerHTML = `Your Age Is ${fullYears} \n You were born on ${showTheDay()}`;
-  document.body.append(h2);
+  days.innerHTML = `عمرك بالايام ${parseInt(result/1000/60/60/24)}`;
+  hours.innerHTML = `عمرك بالساعات ${parseInt(result/1000/60/60)}`;
+  minutes.innerHTML = `عمرك بالدقائق ${parseInt(result/1000/60)}`;
 }
 
 function showTheDay(dayNum) {
   switch(dayNum) {
+    case 0:
+      return 'الاحد';
     case 1:
       return 'الاثنين';
     case 2:
@@ -38,7 +37,5 @@ function showTheDay(dayNum) {
       return 'الجمعة';
     case 6:
       return 'السبت';
-    case 7:
-      return 'الاحد';
   }
 }
