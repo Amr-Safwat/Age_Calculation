@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: deepskyblue;
+	background-color: #0f6987;
 	font-family: 'Cairo', sans-serif;
 }
 
@@ -25,9 +25,9 @@ body {
 
 .card img {
 	display: block;
-	margin: 20px auto;
+	margin: auto;
 	width: 100px;
-	height: 100px;
+	height: 95px;
 	border-radius: 50%;
 	border: 2px solid #aaa;
 	padding: 2px;
@@ -44,22 +44,23 @@ body {
 
 .card input {
 	margin: 10px auto;
-	padding: 8px;
 	text-align: center;
 	border: none;
 	border-radius: 4px;
 	outline: none;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 700;
 	background-color: #eee;
 	font-family: 'Cairo', sans-serif;
 	border: 1px solid #ccc;
 	width: 90px;
 }
 
-.card input:focus input::placeholder {
+.card input::placeholder {
+	color: #ccc;
+}
+.card input:focus::placeholder {
 	opacity: 0;
-	color: red;
 }
 .card button {
 	margin: 20px auto;
