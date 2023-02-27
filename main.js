@@ -12,7 +12,7 @@ let result;
 let dateNow = new Date();
 
 btn.onclick = () => {
-  if (inputs[0].value !== ''||inputs[1].value !== ''||inputs[2].value !== '') {
+  if (inputs[0].value !== ''&&inputs[1].value !== ''&&inputs[2].value !== '') {
     let value = `${inputs[1].value} ${inputs[2].value} ${inputs[0].value}`;
     let valueTwo = `${inputs[2].value}/${inputs[1].value}/${inputs[0].value}`;
     let birthday = new Date(value);

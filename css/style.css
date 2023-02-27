@@ -72,11 +72,11 @@ body {
 	padding: 5px 40px;
 	background-color: #0fa4d7;
 	font-family: 'Cairo', sans-serif;
-	border-bottom: 2px solid grey;
 	color: white;
 }
 .card button:hover {
-	border: none;
+	opacity: .8;
+
 }
 
 .card div:last-of-type{
