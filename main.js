@@ -12,23 +12,27 @@ let result;
 let dateNow = new Date();
 
 btn.onclick = () => {
-  let value = `${inputs[1].value} ${inputs[2].value} ${inputs[0].value}`;
-  let valueTwo = `${inputs[2].value}/${inputs[1].value}/${inputs[0].value}`;
-  let birthday = new Date(value);
-	result = dateNow - birthday;
-	let fullYears = parseInt(result / 1000 / 60 / 60 / 24 / 365);
-	date.innerHTML = `تاريخ ميلادك هو ${valueTwo}`;
-	age.innerHTML = `عمرك ${fullYears} سنة`;
-	day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
-	days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)} يوم`;
-	hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)} ساعة`;
-	minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)} دقيقة`;
+  if (inputs[0].value !== ''||inputs[1].value !== ''||inputs[2].value !== '') {
+    let value = `${inputs[1].value} ${inputs[2].value} ${inputs[0].value}`;
+    let valueTwo = `${inputs[2].value}/${inputs[1].value}/${inputs[0].value}`;
+    let birthday = new Date(value);
+    result = dateNow - birthday;
+    let fullYears = parseInt(result / 1000 / 60 / 60 / 24 / 365);
+    date.innerHTML = `تاريخ ميلادك هو ${valueTwo}`;
+    age.innerHTML = `عمرك ${fullYears} سنة`;
+    day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
+    days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)} يوم`;
+    hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)} ساعة`;
+    minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)} دقيقة`;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
-  inputs[0].value = '';
-  inputs[1].value = '';
-  inputs[2].value = '';
+    inputs[0].value = '';
+    inputs[1].value = '';
+    inputs[2].value = '';
+  } else{
+    console.log('Error');
+  }
 };
 
 function showTheDay(dayNum) {
