@@ -20,9 +20,9 @@ btn.onclick = () => {
 	date.innerHTML = `تاريخ ميلادك هو ${valueTwo}`;
 	age.innerHTML = `عمرك ${fullYears} سنة`;
 	day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
-	days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)}`;
-	hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)}`;
-	minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)}`;
+	days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)} يوم`;
+	hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)} ساعة`;
+	minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)} دقيقة`;
 
   modal.style.display = 'block';
 
