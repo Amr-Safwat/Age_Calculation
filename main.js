@@ -1,4 +1,5 @@
 let inputs = document.querySelectorAll('#date');
+let date = document.querySelector('.date');
 let age = document.querySelector('.age');
 let day = document.querySelector('.day');
 let days = document.querySelector('.days');
@@ -12,9 +13,11 @@ let dateNow = new Date();
 
 btn.onclick = () => {
   let value = `${inputs[1].value} ${inputs[2].value} ${inputs[0].value}`;
-	let birthday = new Date(value);
+  let valueTwo = `${inputs[2].value}/${inputs[1].value}/${inputs[0].value}`;
+  let birthday = new Date(value);
 	result = dateNow - birthday;
 	let fullYears = parseInt(result / 1000 / 60 / 60 / 24 / 365);
+	date.innerHTML = `تاريخ ميلادك هو ${valueTwo}`;
 	age.innerHTML = `عمرك ${fullYears} سنة`;
 	day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
 	days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)}`;
