@@ -100,7 +100,7 @@ form div:not(:last-of-type) {
 }
 
 form div:nth-child(2) p {
-	font-weight: 700;
+	font-weight: 800;
 }
 form div:nth-child(3) {
 	margin: 10px;
