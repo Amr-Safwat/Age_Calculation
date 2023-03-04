@@ -43,7 +43,7 @@ body {
 }
 
 .card input {
-	margin: 10px auto;
+	margin: auto;
 	text-align: center;
 	border: none;
 	border-radius: 4px;
