@@ -79,6 +79,7 @@ function showAgeDetails() {
 
 						modal.style.display = 'block';
 					} else {
+            span.innerHTML = 'تاريخ غير صحيح';
 						span.style.visibility = 'visible';
 					}
 				} else {
