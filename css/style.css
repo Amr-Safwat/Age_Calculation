@@ -92,20 +92,21 @@ body {
 	font-weight: 500;
 	color: white;
 }
-
-
-
 form div:nth-child(2) p {
-	font-weight: 800;
+	font-weight: 700;
+	font-size: 22px;
+}
+form div:nth-child(3) p {
+	font-weight: 700;
+	margin: 8px 0;
 }
 form div:not(:last-child) {
 	margin: 10px;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.3);
-
 }
 form div:first-of-type {
-	margin: 100px 10px 10px;
+	margin: 85px 10px 10px;
 }
 form p {
 	margin: 10px 0;
