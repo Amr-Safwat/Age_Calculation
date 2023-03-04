@@ -93,19 +93,20 @@ body {
 	color: white;
 }
 
-form div:not(:last-of-type) {
-	padding: 20px;
-	margin: 100px 10px 10px;
-	background-color: rgba(0, 0, 0, 0.3);
-}
+
 
 form div:nth-child(2) p {
 	font-weight: 800;
 }
-form div:nth-child(3) {
+form div:not(:last-child) {
 	margin: 10px;
-}
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
 
+}
+form div:first-of-type {
+	margin: 100px 10px 10px;
+}
 form p {
 	margin: 10px 0;
 	font-size: 20px;

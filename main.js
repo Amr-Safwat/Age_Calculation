@@ -1,6 +1,7 @@
 let inputs = document.querySelectorAll('#date');
 let date = document.querySelector('.date');
 let age = document.querySelector('.age');
+let months = document.querySelector('.months');
 let day = document.querySelector('.day');
 let days = document.querySelector('.days');
 let hours = document.querySelector('.hour');
@@ -24,6 +25,7 @@ btn.onclick = () => {
         date.innerHTML = `تاريخ ميلادك هو ${valueTwo}`;
         age.innerHTML = `عمرك ${fullYears} سنة`;
         day.innerHTML = `ولدت فى يوم ${showTheDay(birthday.getDay())}`;
+        months.innerHTML = `عمرك بالشهور ${parseInt(result / 1000 / 60 / 60 / 24 / 12)} شهر`;
         days.innerHTML = `عمرك بالايام ${parseInt(result / 1000 / 60 / 60 / 24)} يوم`;
         hours.innerHTML = `عمرك بالساعات ${parseInt(result / 1000 / 60 / 60)} ساعة`;
         minutes.innerHTML = `عمرك بالدقائق ${parseInt(result / 1000 / 60)} دقيقة`;
