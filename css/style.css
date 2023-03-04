@@ -55,7 +55,11 @@ body {
 	border: 1px solid #ccc;
 	width: 90px;
 }
-
+.card span {
+	display: block;
+	text-align: center;
+	color: red;
+}
 .card input::placeholder {
 	color: #ccc;
 }
@@ -63,7 +67,7 @@ body {
 	opacity: 0;
 }
 .card button {
-	margin: 20px auto;
+	margin: 5px auto 20px;
 	display: block;
 	font-size: 19px;
 	font-weight: 700;
