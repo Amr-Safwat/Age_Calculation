@@ -7,6 +7,7 @@ let day = document.querySelector('.day');
 let days = document.querySelector('.days');
 let hours = document.querySelector('.hour');
 let minutes = document.querySelector('.minute');
+var modal = document.getElementById('id01');
 
 let btn = document.getElementById('btn');
 
@@ -77,7 +78,7 @@ function showAgeDetails() {
 							result / 1000 / 60
 						)} دقيقة`;
 
-						modal.style.display = 'block';
+							modal.style.right = '0';
 					} else {
             span.innerHTML = 'تاريخ غير صحيح';
 						span.style.visibility = 'visible';
@@ -114,14 +115,3 @@ function showTheDay(dayNum) {
 	}
 }
 
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-	if (event.target == modal) {
-		modal.style.display = 'none';
-	}
-};
-
-// console.log(inputs[0]);
-console.log(inputs[1]);
