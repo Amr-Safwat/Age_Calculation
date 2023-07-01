@@ -5,6 +5,7 @@
 body {
 	background-color: #007ba5;
 	font-family: 'Cairo', sans-serif;
+	margin: 0;
 }
 
 .card {
@@ -85,7 +86,6 @@ body {
 
 .card div:last-of-type{
 	padding: 20px;
-	padding-bottom: 50px;
 	margin-top: 30px;
 	background-color: rgba(0, 0, 0, 0.2);
 }
@@ -211,14 +211,10 @@ span.psw {
   }
 }
 
-body > span {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 10px;
+.footer {
+	padding: 20px;
 	font-size: 12px;
-	font-weight: 600;
 	width: 100%;
 	text-align: center;
-	color: grey;
+	color: white;
 }
